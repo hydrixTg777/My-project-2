@@ -58,7 +58,7 @@ async def start_message(bot, message):
             return
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
-        caption=START_MESSAGE.format(message.from_user.mention, print),
+        caption=START_MESSAGE.format(message.from_user.mention,print),
         reply_markup=InlineKeyboardMarkup([[
           InlineKeyboardButton ("➕Add me to group➕", url="http://t.me/Mycraftprojectbot?startgroup=botstart")
           ],[
