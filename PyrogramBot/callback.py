@@ -7,10 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_callback_query()
 async def callback(bot, msg):
     if msg.data == "start":
-        reply1 = await msg.message.edit("▪️▫️▫️")
-        reply2 = await reply1.edit("▪️▪️▫️")
-        reply3 = await reply2.edit("▪️▪️▪️")
-        await reply3.edit(
+        await msg.message.edit(
             text =f" Hello {msg.from_user.mention} 😁",
         )
 
@@ -55,10 +52,13 @@ async def callback(bot, msg):
         )
 
     elif msg.data == "about":
-      reply1 = await msg.message.edit("▪️▫️▫️")
-      reply2 = await reply1.edit("▪️▪️▫️")
-      reply3 = await reply2.edit("▪️▪️▪️")
-        await reply3.edit(
+
+        reply1 = await msg.message.reply_text("▪️▫️▫️")
+        reply2 = await reply1.edit("▪️▪️▫️")
+        reply3 = await reply2.edit("▪️▪️▪️")
+        await reply3.delete()
+
+        await msg.message.edit(
             text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Bot Nᴀᴍᴇ**: [Mʏ Craft](https://t.me/Mycraftprojectbot)\n├🧑‍💻 **Mʏ Dᴇᴠ**: [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📡 **Sᴇʀᴠᴇʀ**: [Heroku](https://heroku.app)\n├🔣 **Language**: [Python-3](https://python.org/)\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« Back", callback_data="start1")
