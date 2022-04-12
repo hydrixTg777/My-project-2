@@ -16,7 +16,7 @@ async def callback(bot, msg):
 
     elif msg.data == "start1":
         await msg.message.edit(
-            text=f"**Hello** ||{msg.from_user.mention}||Welcome to my world🌍\n\n**My name is** <a href="t.me/mycraftprojectbot">My Craft</a>\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\nJoin my Channel: <a href="t.me/tg_galaxy">TG</a>",
+            text=f"**Hello** ||{msg.from_user.mention}||Welcome to my world🌍\n\n**My name is** [My Craft](t.me/mycraftprojectbot)\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\nJoin my Channel: [TG](t.me/tg_galaxy)",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton ("➕Add me to group➕", url="http://t.me/Mycraftprojectbot?startgroup=botstart")
                ],[
