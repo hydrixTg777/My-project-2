@@ -56,23 +56,6 @@ async def start_message(bot, message):
                 )
             )
             return
-
-Out = datetime.datetime.now(Pytz.timezone("Asia/Kolkata"))
-
-Time = Out.hour
-
-if Time < 12:
-    print ("Good morning")
-
-elif Time < 16:
-    print ("Good Afternoon")
-
-elif Time < 20:
-    print ("Good Evaningight")
-
-else:
-    print ("Good night")
-
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
         caption=START_MESSAGE.format(message.from_user.mention),
@@ -90,6 +73,18 @@ else:
         )
     )
 
+    Out = datetime.datetime.now(Pytz.timezone("Asia/Kolkata"))
+
+    Time = Out.hour
+
+    if Time < 12 :
+        print = "Good morning"
+    elif Time < 16 :
+        print = "Good Afternoon"
+    elif Time < 20 :
+        print = "Good Evaningight"
+    else:
+        print = "Good night"
 
 @Client.on_message(filters.private & filters.command("info"))
 async def id(bot, hydrix):
