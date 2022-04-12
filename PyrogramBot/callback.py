@@ -14,6 +14,23 @@ async def callback(bot, msg):
             text =f" Hello {msg.from_user.mention} 😁",
         )
 
+    elif msg.data == "start1":
+        await msg.message.edit(
+            text=f"**Hello** ||{msg.from_user.mention}||Welcome to my world🌍\n\n**My name is** <a href="t.me/Mycraftprojectbot">My Craft</a>\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\n`Join my Channel` : <a href="t.me/tg_galaxy">TG</a>",
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton ("➕Add me to group➕", url="http://t.me/Mycraftprojectbot?startgroup=botstart")
+               ],[
+               InlineKeyboardButton("👥 Group", url="https://t.me/songdownload_group"),
+               InlineKeyboardButton("📚 Help", callback_data="help")
+               ],[
+               InlineKeyboardButton("🧑‍💻 My Dev", url="https://t.me/Hydrix777"),
+               InlineKeyboardButton("🔰 About", callback_data="about")
+               ],[
+               InlineKeyboardButton("🏃 Close", callback_data="delete")
+               ]]
+            )
+        )
+
     elif msg.data == "help":
         await msg.message.edit(
             text="**My Tools**",
@@ -22,7 +39,8 @@ async def callback(bot, msg):
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
-               InlineKeyboardButton("🧑‍🦯 Exit", callback_data="delete")
+               InlineKeyboardButton("« Back", callback_data="start1")
+               InlineKeyboardButton("✗ Close ✗", callback_data="delete")
                ]]
             )
         )
@@ -31,16 +49,16 @@ async def callback(bot, msg):
         await msg.message.edit(
             text="/id : to get your ID\n/info : to get your information ℹ️\n/ginfo - To get group information 👥\n/dc : to get your datacenter 🗄️",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🧑‍🦯 Exit", callback_data="delete")
+               InlineKeyboardButton("« Back", callback_data="start1")
                ]]
             )
         )
 
     elif msg.data == "about":
         await msg.message.edit(
-            text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Bot Nᴀᴍᴇ**: [Mʏ Craft](https://t.me/Mycraftprojectbot)\n├🧑‍💻 **Mʏ Dᴇᴠ**: [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📡 **Sᴇʀᴠᴇʀ**: [Railway](https://Railway.app)\n├🔣 **Language**: [Python-3](https://python.org/)\n╰───────────⍟",
+            text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Bot Nᴀᴍᴇ**: [Mʏ Craft](https://t.me/Mycraftprojectbot)\n├🧑‍💻 **Mʏ Dᴇᴠ**: [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📡 **Sᴇʀᴠᴇʀ**: [Heroku](https://heroku.app)\n├🔣 **Language**: [Python-3](https://python.org/)\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
-               InlineKeyboardButton("🧑‍🦯 Exit", callback_data="delete")
+               InlineKeyboardButton("« Back", callback_data="start1")
               ]]
             )
         )
