@@ -4,6 +4,10 @@ from pyrogram.types import Message
 from pyrogram.types import CallbackQuery
 import random
 from pyrogram.errors import UserNotParticipant
+import datetime
+import Pytz
+
+
 
 
 force_subhydra = "Tg_Galaxy"
@@ -13,7 +17,7 @@ force_subhydra = "Tg_Galaxy"
 
 START_MESSAGE = """
 **Hello** ||{}||Welcome to my world🌍
-
+{print}
 **My name is** <a href="t.me/Mycraftprojectbot">My Craft</a> 
 __This is my first pyrogram project__ 😜
 ~~Click help for find my tools~~ ⛏️
@@ -52,6 +56,23 @@ async def start_message(bot, message):
                 )
             )
             return
+
+Out = datetime.datetime.now(Pytz.timezone("Asia/Kolkata"))
+
+Time = Out.hour
+
+if Time < 12:
+    print ("Good morning")
+
+elif Time < 16:
+    print ("Good Afternoon")
+
+elif Time < 20:
+    print ("Good Evaningight")
+
+else:
+    print ("Good night")
+
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
         caption=START_MESSAGE.format(message.from_user.mention),
