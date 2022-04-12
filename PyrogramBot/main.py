@@ -65,9 +65,8 @@ async def start_message(bot, message):
         )
     )
 
-
 @Client.on_message(filters.private & filters.command("info"))
-async def id(bot, hydrix):
+async def info(bot, hydrix):
     await hydrix.reply_sticker(
         sticker="CAACAgIAAxkBAAIT52ISTo1D3dUZ8KNG-hLN5hWid6lSAALqFAACXongS2tWgvz0KigPHgQ"             
     )
@@ -82,7 +81,7 @@ Mention : {hydrix.from_user.mention}"""
 
 
 @Client.on_message(filters.group & filters.command("ginfo"))
-async def demo(bot, hydrix):
+async def ginfo(bot, hydrix):
     await hydrix.reply_sticker(
         sticker="CAACAgIAAxkBAAIUDmISWCSOoFk5ctVJNSHw_CWBQ2RvAAJeFwAC0UfgSy6uWe6YGw9HHgQ"             
     )
