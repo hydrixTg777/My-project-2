@@ -39,7 +39,7 @@ async def callback(bot, msg):
                InlineKeyboardButton("soon..", callback_data="start"),
                InlineKeyboardButton("soon..", callback_data="start")
                ],[
-               InlineKeyboardButton("« Back", callback_data="start1")
+               InlineKeyboardButton("« Back", callback_data="start1"),
                InlineKeyboardButton("✗ Close ✗", callback_data="delete")
                ]]
             )
