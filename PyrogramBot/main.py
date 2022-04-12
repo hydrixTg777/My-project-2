@@ -17,7 +17,7 @@ START_MESSAGE = """
 **My name is** <a href="t.me/Mycraftprojectbot">My Craft</a> 
 __This is my first pyrogram project__ 😜
 ~~Click help for find my tools~~ ⛏️
-`Join my Channel` : <a href="t.me/tgsnsgay">TG</a>
+`Join my Channel` : <a href="t.me/tg_galaxy">TG</a>
 """
 
  
@@ -58,7 +58,7 @@ async def start_message(bot, message):
         reply_markup=InlineKeyboardMarkup([[
           InlineKeyboardButton ("➕Add me to group➕", url="http://t.me/Mycraftprojectbot?startgroup=botstart")
           ],[
-          InlineKeyboardButton("👥 Group", url="t.me/Music_Galaxy_Dl"),
+          InlineKeyboardButton("👥 Group", url="https://t.me/songdownload_group"),
           InlineKeyboardButton("📚 Help", callback_data="help")
           ],[
           InlineKeyboardButton("🧑‍💻 My Dev", url="https://t.me/Hydrix777"),
