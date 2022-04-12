@@ -17,7 +17,7 @@ force_subhydra = "Tg_Galaxy"
 
 START_MESSAGE = """
 **Hello** ||{}||Welcome to my world🌍
-{print}
+{}
 **My name is** <a href="t.me/Mycraftprojectbot">My Craft</a> 
 __This is my first pyrogram project__ 😜
 ~~Click help for find my tools~~ ⛏️
@@ -58,7 +58,7 @@ async def start_message(bot, message):
             return
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
-        caption=START_MESSAGE.format(message.from_user.mention),
+        caption=START_MESSAGE.format(message.from_user.mention, print),
         reply_markup=InlineKeyboardMarkup([[
           InlineKeyboardButton ("➕Add me to group➕", url="http://t.me/Mycraftprojectbot?startgroup=botstart")
           ],[
