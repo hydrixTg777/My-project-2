@@ -58,7 +58,6 @@ async def callback(bot, msg):
       reply1 = await msg.message.edit("▪️▫️▫️")
       reply2 = await reply1.edit("▪️▪️▫️")
       reply3 = await reply2.edit("▪️▪️▪️")
-
         await reply3.edit(
             text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Bot Nᴀᴍᴇ**: [Mʏ Craft](https://t.me/Mycraftprojectbot)\n├🧑‍💻 **Mʏ Dᴇᴠ**: [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📡 **Sᴇʀᴠᴇʀ**: [Heroku](https://heroku.app)\n├🔣 **Language**: [Python-3](https://python.org/)\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
