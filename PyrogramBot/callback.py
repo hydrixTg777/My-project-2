@@ -1,8 +1,5 @@
-from pyrogram.types import CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
-
 
 
 # Callback
@@ -10,7 +7,10 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_callback_query()
 async def callback(bot, msg):
     if msg.data == "start":
-        await msg.message.edit(
+        reply1 = await msg.message.edit("▪️▫️▫️")
+        reply2 = await reply1.edit("▪️▪️▫️")
+        reply3 = await reply2.edit("▪️▪️▪️")
+        await reply3.edit(
             text =f" Hello {msg.from_user.mention} 😁",
         )
 
@@ -55,7 +55,11 @@ async def callback(bot, msg):
         )
 
     elif msg.data == "about":
-        await msg.message.edit(
+      reply1 = await msg.message.edit("▪️▫️▫️")
+      reply2 = await reply1.edit("▪️▪️▫️")
+      reply3 = await reply2.edit("▪️▪️▪️")
+
+        await reply3.edit(
             text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Bot Nᴀᴍᴇ**: [Mʏ Craft](https://t.me/Mycraftprojectbot)\n├🧑‍💻 **Mʏ Dᴇᴠ**: [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📡 **Sᴇʀᴠᴇʀ**: [Heroku](https://heroku.app)\n├🔣 **Language**: [Python-3](https://python.org/)\n╰───────────⍟",
             reply_markup=InlineKeyboardMarkup([[
                InlineKeyboardButton("« Back", callback_data="start1")
