@@ -12,6 +12,18 @@ async def callback(bot, msg):
         )
 
     elif msg.data == "start1":
+
+        reply1 = await msg.message.reply_text("▪️▫️▫️")
+        await asyncio.sleep(0.5)
+
+        reply2 = await reply1.edit("▪️▪️▫️")
+        await asyncio.sleep(0.5)
+
+        reply3 = await reply2.edit("▪️▪️▪️")
+        await asyncio.sleep(0.5)
+
+        await reply3.delete()
+
         await msg.message.edit(
             text=f"**Hello** ||{msg.from_user.mention}||Welcome to my world🌍\n\n**My name is** [My Craft](t.me/mycraftprojectbot)\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\nJoin my Channel: [TG](t.me/tg_galaxy)",
             reply_markup=InlineKeyboardMarkup([[
