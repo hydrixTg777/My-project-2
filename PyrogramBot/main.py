@@ -4,8 +4,7 @@ from pyrogram.types import Message
 from pyrogram.types import CallbackQuery
 import random
 from pyrogram.errors import UserNotParticipant
-import datetime
-import pytz
+
 
 
 
