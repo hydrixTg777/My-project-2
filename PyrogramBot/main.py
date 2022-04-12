@@ -50,6 +50,7 @@ async def start_message(bot, message):
             return
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
+    await message.reply_text(
         text=f"**Hello** ||{message.from_user.mention}||Welcome to my world🌍\n\n**My name is** [My Craft](t.me/mycraftprojectbot)\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\nJoin my Channel: [TG](t.me/tg_galaxy)",
         reply_markup=InlineKeyboardMarkup([[
           InlineKeyboardButton ("➕Add me to group➕", url="http://t.me/Mycraftprojectbot?startgroup=botstart")
