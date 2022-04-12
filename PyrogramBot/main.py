@@ -73,7 +73,7 @@ async def start_message(bot, message):
         )
     )
 
-    Out = datetime.datetime.now(Pytz.timezone("Asia/Kolkata"))
+    Out = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
 
     Time = Out.hour
 
