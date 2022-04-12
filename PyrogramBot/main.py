@@ -51,7 +51,7 @@ async def start_message(bot, message):
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
     await message.reply_text(
-        text=f"**{print}** ||{message.from_user.mention}||Welcome to my world🌍\n\n**My name is** [My Craft](t.me/mycraftprojectbot)\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\nJoin my Channel: [TG](t.me/tg_galaxy)",
+        text=f"**kooi** ||{message.from_user.mention}||Welcome to my world🌍\n\n**My name is** [My Craft](t.me/mycraftprojectbot)\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\nJoin my Channel: [TG](t.me/tg_galaxy)",
         reply_markup=InlineKeyboardMarkup([[
           InlineKeyboardButton ("➕Add me to group➕", url="http://t.me/Mycraftprojectbot?startgroup=botstart")
           ],[
@@ -66,18 +66,6 @@ async def start_message(bot, message):
         )
     )
 
-    Out = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
-
-    Time = Out.hour
-
-    if Time < 12 :
-        print = "Good morning"
-    elif Time < 16 :
-        print = "Good Afternoon"
-    elif Time < 20 :
-        print = "Good Evaningight"
-    else:
-        print = "Good night"
 
 @Client.on_message(filters.private & filters.command("info"))
 async def id(bot, hydrix):
