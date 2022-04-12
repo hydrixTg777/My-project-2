@@ -6,7 +6,7 @@ import random
 from pyrogram.errors import UserNotParticipant
 
 
-force_subhydra = "fun_rooms"
+force_subhydra = "Tg_Galaxy"
 
 
 
