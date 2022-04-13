@@ -98,5 +98,14 @@ async def callback(bot, msg):
               ]]
             )
         )
+
+# Alert msg-----
+
+@Client.on_callback_query()
+async def callback_data(bot, query):
+    if query.data == "help":
+        await query.answer("hi")
+
+
     elif msg.data == "delete":
         await msg.message.delete()
