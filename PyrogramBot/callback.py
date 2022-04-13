@@ -45,16 +45,17 @@ async def callback(bot, msg):
 
     elif msg.data == "help":
 
+        await msg.message.reply_chat_action("Typing")
+
         reply1 = await msg.message.reply_text("▪️▫️▫️")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("▪️▪️▫️")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("▪️▪️▪️")
         await asyncio.sleep(0.5)
-
         await reply3.delete()
+
+
 
         await msg.message.edit(
             text="**My Tools**",
@@ -98,14 +99,6 @@ async def callback(bot, msg):
               ]]
             )
         )
-
-# Alert msg-----
-
-@Client.on_callback_query()
-async def callback_data(bot, query):
-    elif query.data == "help":
-        await query.answer("hi")
-
 
     elif msg.data == "delete":
         await msg.message.delete()
