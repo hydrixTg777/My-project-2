@@ -103,7 +103,7 @@ async def callback(bot, msg):
 
 @Client.on_callback_query()
 async def callback_data(bot, query):
-    if query.data == "help":
+    elif query.data == "help":
         await query.answer("hi")
 
 
