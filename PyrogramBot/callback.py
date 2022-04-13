@@ -46,6 +46,7 @@ async def callback(bot, msg):
     elif msg.data == "help":
 
         await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
 
         reply1 = await msg.message.reply_text("▪️▫️▫️")
         await asyncio.sleep(0.5)
