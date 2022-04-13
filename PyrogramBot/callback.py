@@ -13,19 +13,20 @@ async def callback(bot, msg):
 
     elif msg.data == "start1":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-
         reply4 = await reply3.edit("●●●●")
         await asyncio.sleep(0.5)
-
         await reply4.delete()
+
+
 
         await msg.message.edit(
             text=f"**Hello** ||{msg.from_user.mention}||Welcome to my world🌍\n\n**My name is** [My Craft](t.me/mycraftprojectbot)\n__This is my first pyrogram project__ 😜\n~~Click help for find my tools~~ ⛏️\nJoin my Channel: [TG](t.me/tg_galaxy)",
@@ -48,14 +49,15 @@ async def callback(bot, msg):
         await msg.message.reply_chat_action("Typing")
         await asyncio.sleep(1)
 
-        reply1 = await msg.message.reply_text("▪️▫️▫️")
+        reply1 = await msg.message.reply_text("●○○○")
         await asyncio.sleep(0.5)
-        reply2 = await reply1.edit("▪️▪️▫️")
+        reply2 = await reply1.edit("●●○○")
         await asyncio.sleep(0.5)
-        reply3 = await reply2.edit("▪️▪️▪️")
+        reply3 = await reply2.edit("●●●○")
         await asyncio.sleep(0.5)
-        await reply3.delete()
-
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+        await reply4.delete()
 
 
         await msg.message.edit(
@@ -82,16 +84,18 @@ async def callback(bot, msg):
 
     elif msg.data == "about":
 
+        await msg.message.reply_chat_action("Typing")
+        await asyncio.sleep(1)
+
         reply1 = await msg.message.reply_text("▪️▫️▫️")
         await asyncio.sleep(0.5)
-
         reply2 = await reply1.edit("▪️▪️▫️")
         await asyncio.sleep(0.5)
-
         reply3 = await reply2.edit("▪️▪️▪️")
         await asyncio.sleep(0.5)
-
         await reply3.delete()
+
+
 
         await msg.message.edit(
             text="╭────[ᴀʙᴏᴜᴛ]────⍟\n├🤖 **Bot Nᴀᴍᴇ**: [Mʏ Craft](https://t.me/Mycraftprojectbot)\n├🧑‍💻 **Mʏ Dᴇᴠ**: [Hʏᴅʀɪx](https://t.me/Hydrix777)\n├📡 **Sᴇʀᴠᴇʀ**: [Heroku](https://heroku.app)\n├🔣 **Language**: [Python-3](https://python.org/)\n╰───────────⍟",
