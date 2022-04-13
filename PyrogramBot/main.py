@@ -53,8 +53,7 @@ async def start_message(bot, message):
                 )
             )
             return
-
-    await bot.send_chat_action(msg.from_user.id, "Typing")
+    await bot.send_chat_action(bot.from_user.id, "Typing")
         await asyncio.sleep(1)
 
     await message.reply_photo(
