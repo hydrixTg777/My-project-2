@@ -53,9 +53,6 @@ async def start_message(bot, message):
                 )
             )
             return
-    await bot.send_chat_action(bot.from_user.id, "Typing")
-    await asyncio.sleep(1)
-
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
         caption=START_MESSAGE.format(message.from_user.mention),
