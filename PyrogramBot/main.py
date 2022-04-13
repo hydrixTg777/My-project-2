@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from pyrogram.types import CallbackQuery
 import random
 from pyrogram.errors import UserNotParticipant
-
+import asyncio
 
 
 
@@ -53,6 +53,10 @@ async def start_message(bot, message):
                 )
             )
             return
+
+    await bot.send_chat_action(msg.from_user.id, "Typing")
+        await asyncio.sleep(1)
+
     await message.reply_photo(
         photo=random.choice(START_PHOTO),
         caption=START_MESSAGE.format(message.from_user.mention),
