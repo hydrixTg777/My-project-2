@@ -1,12 +1,13 @@
 from pyrogram import Client
-
+import os
+from config import API_HASH, API_ID, BOT_TOKEN
 
 Client = Client(
     "PyrogramBot",
-    api_hash="7d120384f48b2a86fa2b9e9772a28af6",
-    api_id="18891187",
-    bot_token="5179683696:AAGkEjTDHctlCBoJs7WtmMRP_6E_CEJHMaU",
+    api_hash=API_HASH, 
+    api_id=API_ID, 
+    bot_token=BOT_TOKEN, 
     plugins=dict(root="PyrogramBot")
-)
+) 
 
 Client.run()
