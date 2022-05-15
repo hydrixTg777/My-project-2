@@ -4,7 +4,7 @@ from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessa
 
 
 @Client.on_inline_query()
-async def inlinemode(bot, query: InlineQuery) 
+async def inlinemode(bot, query: InlineQuery):
     await query.answer(
         results=[
             InlineQueryResultArticle(
