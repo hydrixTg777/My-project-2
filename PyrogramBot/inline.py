@@ -10,6 +10,7 @@ async def inlinemode(bot, query: InlineQuery):
             InlineQueryResultArticle(
                 title="HyDrix",
                 description="Click Here",
+                thumb_url="https://telegra.ph/file/27b70110ca3c941f61252.jpg",
                 input_message_content=InputTextMessageContent(
                     message_text="""okk daaa"""
                 )
