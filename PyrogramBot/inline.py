@@ -15,7 +15,7 @@ async def inlinemode(bot, query: InlineQuery):
                 input_message_content=InputTextMessageContent(
                     message_text="""okk daaa"""
                 ),
-                reply_markup=InlineKeyboardMarkup(
+                reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton("Hydrix", url="t.me/tg_galaxy")
                     ]]
                 )
