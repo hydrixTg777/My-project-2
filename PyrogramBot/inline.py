@@ -15,5 +15,5 @@ async def inlinemode(bot, query: InlineQuery)
                 )
             )
         ],
-        cecha_time=0
+        cache_time=0
     )
