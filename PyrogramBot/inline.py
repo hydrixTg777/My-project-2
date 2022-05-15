@@ -1,5 +1,5 @@
 from pyrogram import Client
-from pyrogram.types import InlineQuery, InlineQueryResultArticle
+from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent         
 
 
 
@@ -10,4 +10,10 @@ async def inlinemode(bot, query: InlineQuery)
             InlineQueryResultArticle(
                 title="HyDrix",
                 description="Click Here",
-                input_message_content
+                input_message_content=InputTextMessageContent(
+                    message_text="""okk daaa"""
+                )
+            )
+        ],
+        cecha_time=0
+    )
