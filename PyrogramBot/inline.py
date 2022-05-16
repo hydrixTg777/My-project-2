@@ -33,3 +33,4 @@ async def inlinemode(bot, query: InlineQuery):
         ],
         cache_time=0
     )
+ 
