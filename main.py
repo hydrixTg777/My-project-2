@@ -1,6 +1,6 @@
 from pyrogram import Client
 import os
-from config import API_HASH, API_ID, BOT_TOKEN
+from Config import API_HASH, API_ID, BOT_TOKEN
 
 Client = Client(
     "PyrogramBot",
